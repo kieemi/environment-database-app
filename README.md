@@ -1,3 +1,4 @@
+[![HitCount](http://hits.dwyl.com/kieemi/environment-database-app.svg)](http://hits.dwyl.com/kieemi/environment-database-app)
 # environment-database-app
 
 Main goal of this application is to create user-friendly work environment for experts to read and store standarized data about subjects of protection in Natura 2000 Sites of European Union.
