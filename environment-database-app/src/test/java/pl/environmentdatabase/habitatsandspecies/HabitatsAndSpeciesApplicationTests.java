@@ -1,10 +1,10 @@
-package pl.bazadanychprzyrodniczych.kartowaniesiedlisk;
+package pl.environmentdatabase.habitatsandspecies;
 
 import org.junit.jupiter.api.Test;
 import org.springframework.boot.test.context.SpringBootTest;
 
 @SpringBootTest
-class KartowanieSiedliskApplicationTests {
+class HabitatsAndSpeciesApplicationTests {
 
 	@Test
 	void contextLoads() {
