@@ -1,7 +1,7 @@
 [![HitCount](http://hits.dwyl.com/kieemi/environment-database-app.svg)](http://hits.dwyl.com/kieemi/environment-database-app)
 # environment-database-app
 
-## Why do i make app like this ## 
+## Why app like this ## 
 
 Main goal of this application is to create user-friendly work environment for experts to read and store standarized data about subjects of protection in Natura 2000 Sites of European Union. It's also a good challenge wchch will improve my coding skills.
 
@@ -20,6 +20,6 @@ At this stage app provide simple view of sample data from database and REST API
 
 ## How it will work ## 
 
-At this stage I'm aiming to create CRUD web app and REST API to manage nonspatial, standarized part of data in PostGIS database to create table views and reports from it.
+I'm aiming to create CRUD web app and REST API to manage nonspatial, standarized part of data in PostGIS database to create table views and reports from it. In future, maybe add some spacial data editing tools. 
 
 
