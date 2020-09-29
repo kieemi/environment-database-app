@@ -51,7 +51,7 @@ public class Habitat {
 	private Float estimatedMappingPrecissionInMeters;
 
 	@Column(name = "zrddan")
-	private String TheDataSource;
+	private String dataSource;
 
 	@Column(name = "uwg")
 	private String comment;
@@ -152,12 +152,12 @@ public class Habitat {
 		this.estimatedMappingPrecissionInMeters = estimatedMappingPrecissionInMeters;
 	}
 
-	public String getTheDataSource() {
-		return TheDataSource;
+	public String getDataSource() {
+		return dataSource;
 	}
 
-	public void setTheDataSource(String theDataSource) {
-		TheDataSource = theDataSource;
+	public void setDataSource(String dataSource) {
+		this.dataSource = dataSource;
 	}
 
 	public String getComment() {
@@ -293,7 +293,7 @@ public class Habitat {
 		return "Habitat [guid=" + guid + ", habitatFullNameByCode=" + habitatFullNameByCode + ", nameOfNatura2000Site="
 				+ nameOfNatura2000Site + ", observationDate=" + observationDate
 				+ ", estimatedMappingPrecissionInMeters=" + estimatedMappingPrecissionInMeters + ", TheDataSource="
-				+ TheDataSource + ", comment=" + comment + ", actualAssessmentOfTheHabitatAreaParameterAtTheSite="
+				+ dataSource + ", comment=" + comment + ", actualAssessmentOfTheHabitatAreaParameterAtTheSite="
 				+ actualAssessmentOfTheHabitatAreaParameterAtTheSite
 				+ ", referentialAssessmentOfTheHabitatAreaParameterAtTheSite="
 				+ referentialAssessmentOfTheHabitatAreaParameterAtTheSite
