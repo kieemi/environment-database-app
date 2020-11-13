@@ -1,20 +1,29 @@
 <!DOCTYPE html>
-<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<html xmlns="http://www.w3.org/1999/xhtml"
+	xmlns:th="http://www.thymeleaf.org">
 <head>
 <meta charset="UTF-8">
 <title>Habitats list</title>
 
-<!-- Bootstrap CSS -->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+	<link rel="stylesheet" href="https://cdn.datatables.net/1.10.12/css/jquery.dataTables.min.css">
+	<script src="https://cdn.datatables.net/1.10.12/js/jquery.dataTables.min.js"></script>
+	<script src="datatable.js"></script>
+
+<!-- Bootstrap CSS
 <link rel="stylesheet"
 	href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
 	integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh"
-	crossorigin="anonymous">
+	crossorigin="anonymous">-->
 
-<title>Habitats list</title>
 </head>
 <body>
 	<h1>List of habitats</h1>
-	<table class="table table-bordered table table-striped">
+	<table id="habitatsTable" class="display">
+	 <!-- Header Table -->
+       <thead>
 		<tr>
 			<th>GUID</th>
 			<th>kod siedliska przyrodniczego</th>
@@ -23,7 +32,7 @@
 			<th>krecyzyjność kartowania</th>
 			<th>źródło danych</th>
 			<th>uwagi</th>
-			<th>rzeczywista ocena parametru stan populacji</th>
+			<!--<th>rzeczywista ocena parametru stan populacji</th>
 			<th>referencyjna ocena parametru stan populacji</th>
 			<th>rzeczywista ocena parametru stan siedliska</th>
 			<th>referencyjna ocena parametru stan siedliska</th>
@@ -31,10 +40,31 @@
 			<th>referencyjna ocena parametru perspektywy ochrony</th>
 			<th>rzeczywista ocena stanu ochrony stanowiska</th>
 			<th>referencyjna ocena stanu ochrony stanowiska</th>
-			<th>Wskaźniki</th>
+			<th>Wskaźniki</th>-->
 
 		</tr>
-		<tr th:each="habitat : ${habitats}">
+		</thead>
+		<tfoot>
+			<tr>
+				<th>GUID</th>
+				<th>kod siedliska przyrodniczego</th>
+				<th>kod obszaru Natura 2000</th>
+				<th>kata obserwacji</th>
+				<th>krecyzyjność kartowania</th>
+				<th>źródło danych</th>
+				<!--<th>uwagi</th>
+				<th>rzeczywista ocena parametru stan populacji</th>
+				<th>referencyjna ocena parametru stan populacji</th>
+				<th>rzeczywista ocena parametru stan siedliska</th>
+				<th>referencyjna ocena parametru stan siedliska</th>
+				<th>rzeczywista ocena parametru perspektywy ochrony</th>
+				<th>referencyjna ocena parametru perspektywy ochrony</th>
+				<th>rzeczywista ocena stanu ochrony stanowiska</th>
+				<th>referencyjna ocena stanu ochrony stanowiska</th>
+				<th>Wskaźniki</th>-->
+			</tr>
+		</tfoot>
+	<!--  	<tr th:each="habitat : ${habitats}">
 			<td th:text="${habitat.guid}">1</td>
 			<td>
 				<p
@@ -63,7 +93,7 @@
 					<span th:text="${habitatRates.previousAssessmentBasedOnAvailableSources}"></span>
 				</p>
 			</td>
-		</tr>
+		</tr>-->
 	</table>
 </body>
 </html>

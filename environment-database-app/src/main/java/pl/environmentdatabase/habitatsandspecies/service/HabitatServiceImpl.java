@@ -1,5 +1,6 @@
 package pl.environmentdatabase.habitatsandspecies.service;
 
+import java.util.List;
 import java.util.Optional;
 
 import org.springframework.beans.factory.annotation.Autowired;
@@ -8,14 +9,14 @@ import org.springframework.stereotype.Service;
 import pl.environmentdatabase.habitatsandspecies.entity.Habitat;
 import pl.environmentdatabase.habitatsandspecies.repository.HabitatRepository;
 
-@Service
+@Service("habitatService")
 public class HabitatServiceImpl implements HabitatService {
 
 	@Autowired
 	private HabitatRepository habitatRepository;
 	
 	@Override
-	public Iterable<Habitat> findAll() {
+	public List<Habitat> findAll() {
 		return habitatRepository.findAll();
 	}
 
