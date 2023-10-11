@@ -10,12 +10,12 @@ I collaborated with my colleagues from the Regional Directorate for Environmenta
 I've also introduced a guid_ column as a sort of label for data across all tables. It's deliberately used as an "additional global unique key" to establish 1-1 and 1-N relationships between tables. This way, data can be edited and viewed in GIS programs without a direct database connection, solely using the shapefile and database files. If you're interested in seeing how this functions in QGIS, please click this [link](https://docs.qgis.org/3.4/en/docs/user_manual/working_with_vector/attribute_table.html#creating-one-or-many-to-many-relations), which show it works in QGIS.
 ![image](https://github.com/kieemi/environment-database-app/blob/master/data%20relation.jpg)
 
-## How it works now ## 
+## How it works## 
 
-At this stage app provide simple view of sample data from database and REST API
+At this stage, the app provides a simple view of sample data from the database and a REST API.
 
-## How it will work ## 
+## How it supose to work in future ## 
 
-I'm aiming to create CRUD web app and REST API to manage nonspatial, standarized part of data in PostGIS database to create table views and reports from it. In future, maybe add some spacial data editing tools. 
+I'm aiming to create a CRUD web app and a REST API to manage the non-spatial, standardized portion of data in the PostGIS database and to generate table views and reports from it. In the future, I may add some spatial data editing tools.
 
 
